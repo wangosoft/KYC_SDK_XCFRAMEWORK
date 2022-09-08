@@ -11,13 +11,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/wangosoft/KYC_SDK_XCFRAMEWORK.git', :tag => s.version }
  
   s.ios.deployment_target = '13.0'
-  s.source_files = 'KYC_SDK/*.swift', 'KYC_SDK/**/*.swift', 'KYC_SDK/**/**/*.swift'
-  s.resource_bundles = {
-    'KYC_SDK' => ['KYC_SDK/**/**/*.storyboard', 'KYC_SDK/*/*.storyboard', 'KYC_SDK/*/*.{xib}']
-  }
 
   s.vendored_frameworks = 'KYC_SDK.xcframework'
 
  
   s.swift_version = '5.0'
+
 end
