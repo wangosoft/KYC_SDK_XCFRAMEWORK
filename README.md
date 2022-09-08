@@ -16,7 +16,10 @@ Privacy - Camera Usage Description
 ### Getting Started
 Start KYC session like this
 ```Swift
-KycCore.getInstance().apply(navigationController: YOUR_NAVIGATION_CONTROLLER, delegate: self, signatureKey: YOUR_SIGNATURE_KEY, environment: .STAGING).startKyc() // STAGING, RELEASE
+var kycCore: KycCore?
+kycCore = KycCore.getInstance()
+kycCore?.apply(navigationController: YOUR_NAVIGATION_CONTROLLER, delegate: self, signatureKey: YOUR_SIGNATURE_KEY, environment: .STAGING) // STAGING, RELEASE
+kycCore?.startKyc()
 ```
 
 And listen your result like protocol
