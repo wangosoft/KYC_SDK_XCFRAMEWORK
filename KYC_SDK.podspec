@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://onrglr.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'onrglr' => 'info@onrglr.com' }
-  s.source           = { :git => 'https://github.com/wangosoft/KYC_Framework.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wangosoft/KYC_SDK_XCFRAMEWORK.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '13.0'
   s.source_files = 'KYC_SDK/*.swift', 'KYC_SDK/**/*.swift', 'KYC_SDK/**/**/*.swift'
