@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
   }
 
   s.vendored_frameworks = 'KYC_SDK.xcframework'
-  s.ios.frameworks = 'UIKit'
 
  
   s.swift_version = '5.0'
