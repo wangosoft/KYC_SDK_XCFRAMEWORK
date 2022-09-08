@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KYC_SDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1'
   s.summary          = 'KYC_SDK'
  
   s.description      = 'KYC_SDK'
@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
     'KYC_SDK' => ['KYC_SDK/**/**/*.storyboard', 'KYC_SDK/*/*.storyboard', 'KYC_SDK/*/*.{xib}']
   }
 
-  s.vendored_frameworks = 'KYC_SDK.framework'
+  s.vendored_frameworks = 'KYC_SDK.xcframework'
 
  
+  s.swift_version = '5.0'
 end
