@@ -66,8 +66,13 @@ static int    REASON_UNKNOWN    Unknown error.
 ### PERMISSIONS
 
 public enum PermissionEvents {
-    case REQUESTED,
-    case GRANTED,
-    case DENIED,
+
+    case REQUESTED
+    
+    case GRANTED
+    
+    case DENIED
+    
     case SHOW_REQUEST_PERMISSION_RATIONALE
+    
 }
