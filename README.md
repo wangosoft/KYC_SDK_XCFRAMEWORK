@@ -5,7 +5,7 @@ KYC SDK for iOS supports 13 and above
 
 ### Install iOS framework from Cocoapods
 ```
-pod 'KYC_SDK'
+  pod 'KYC_SDK', '~> 0.2'
 ```
 
 ### Required Permissions
@@ -16,7 +16,9 @@ Privacy - Camera Usage Description
 ### Getting Started
 Start KYC session like this
 ```Swift
-KycCore.getInstance().apply(navigationController: YOUR_NAVIGATION_CONTROLLER, delegate: self, signatureKey: YOUR_SIGNATURE_KEY, environment: .STAGING).startKyc() // STAGING, RELEASE
+let kycCore: KycCore = KycCore.getInstance()
+kycCore.apply(navigationController: YOUR_NAVIGATION_CONTROLLER, delegate: self, signatureKey: YOUR_SIGNATURE_KEY, environment: .STAGING) // STAGING, RELEASE
+kycCore.startKyc()
 ```
 
 And listen your result like protocol
@@ -64,8 +66,13 @@ static int    REASON_UNKNOWN    Unknown error.
 ### PERMISSIONS
 
 public enum PermissionEvents {
+
     case REQUESTED
+    
     case GRANTED
+    
     case DENIED
+    
     case SHOW_REQUEST_PERMISSION_RATIONALE
+    
 }
