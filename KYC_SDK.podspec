@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KYC_SDK'
-  s.version          = '0.2'
+  s.version          = '0.3'
   s.summary          = 'KYC_SDK'
  
   s.description      = 'KYC_SDK'
